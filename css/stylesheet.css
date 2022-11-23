@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* Format Instructions
+    Colors should be in rgb or rgba
+        Primary colors are
+            rgb(127, 197, 89)
+            rgb(82, 83, 86)
+            rgb(0, 0, 0)
+            rgb(255, 255, 255)
+    Class names should be lowercase with an uppercase letter starting any additional words. ie. "className"
+    Font family should not change
+    Flexbox should be used whenever practical
+    Styles that will only apply to one page should be on their own stylesheet to keep the global sheet as small as possible
+*/
+/*--------------------Global--------------------*/
+body {
+    width: auto !important;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:link {
+    color: rgb(127, 197, 89);
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: rgb(82, 83, 86);
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    font-weight: bold;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: rgb(37, 141, 245);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+/*--------------------Header--------------------*/
+
+/*------------------Navigation------------------*/
+
+/*---------------------Main---------------------*/
+
+/*--------------------Footer--------------------*/
