@@ -2,9 +2,9 @@
 /* Format Instructions
     Colors should be in rgb or rgba
         Primary colors are
-            rgb(127, 197, 89)
-            rgb(82, 83, 86)
-            rgb(0, 0, 0)
+            rgb(127, 197, 89) = var(--green)
+            rgb(82, 83, 86) = var(--grey)
+            rgb(0, 0, 0) 
             rgb(255, 255, 255)
     Class names should be lowercase with an uppercase letter starting any additional words. ie. "className"
     Font family should not change
@@ -12,6 +12,10 @@
     Styles that will only apply to one page should be on their own stylesheet to keep the global sheet as small as possible
 */
 /*--------------------Global--------------------*/
+:root {
+    --green: rgb(127, 197, 89);
+    --grey: rgb(82, 83, 86);
+}
 body {
     width: auto !important;
     margin-top: 0px;
@@ -22,23 +26,19 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 a:link {
-    color: rgb(127, 197, 89);
-    background-color: transparent;
+    color: var(--green);
     text-decoration: none;
 }
 a:visited {
-    color: rgb(82, 83, 86);
-    background-color: transparent;
+    color: var(--grey);
     text-decoration: none;
 }
 a:hover {
     font-weight: bold;
-    background-color: transparent;
     text-decoration: underline;
 }
 a:active {
     color: rgb(37, 141, 245);
-    background-color: transparent;
     text-decoration: underline;
 }
 
