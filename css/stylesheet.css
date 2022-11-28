@@ -1,12 +1,13 @@
 @charset "UTF-8";
+
 /* Format Instructions
     Colors should be in rgb or rgba
-        Primary colors are
+        Primary colors are:
             rgb(127, 197, 89) = var(--green)
             rgb(82, 83, 86) = var(--grey)
             rgb(0, 0, 0) 
             rgb(255, 255, 255)
-    Class names should be lowercase with an uppercase letter starting any additional words. ie. "className"
+    Class names should be lower camel case. ie. "className, anotherClassName"
     Font family should not change
     Flexbox should be used whenever practical
     Styles that will only apply to one page should be on their own stylesheet to keep the global sheet as small as possible
@@ -16,6 +17,7 @@
     --green: rgb(127, 197, 89);
     --grey: rgb(82, 83, 86);
 }
+
 body {
     width: auto !important;
     margin-top: 0px;
@@ -25,27 +27,49 @@ body {
     background-color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
 }
+
 a:link {
     color: var(--green);
     text-decoration: none;
 }
+
 a:visited {
     color: var(--grey);
     text-decoration: none;
 }
+
 a:hover {
     font-weight: bold;
     text-decoration: underline;
 }
+
 a:active {
     color: rgb(37, 141, 245);
     text-decoration: underline;
 }
 
 /*--------------------Header--------------------*/
-
+header {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 /*------------------Navigation------------------*/
-
+nav {
+    display: flex;
+    background-color: var(--grey);
+}
+nav a {
+    color: rgb(255, 255, 255);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+nav a:hover {
+    background-color: var(--green);
+}
 /*---------------------Main---------------------*/
 
 /*--------------------Footer--------------------*/
