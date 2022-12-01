@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/css/stylesheet.css">
 </head>
 <body>
-    <?php include ($_SERVER['DOCUMENT_ROOT'].'/partials/header.php');?>
+    <?php include '/partials/header.php';?>
     <!-- Main Image -->
 
     <!-- Content -->
