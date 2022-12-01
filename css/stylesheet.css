@@ -71,5 +71,21 @@ nav a:hover {
     background-color: var(--green);
 }
 /*---------------------Main---------------------*/
-
+/* Info Cards */
+.infoCardContainer {
+    margin: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+}
+.infoCard {
+    height: 500px;
+    flex: 1 0 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.infoCard img {
+    width: 100%;
+}
 /*--------------------Footer--------------------*/
