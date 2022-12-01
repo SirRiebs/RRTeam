@@ -56,6 +56,10 @@ header {
     justify-content: center;
     align-items: center;
 }
+.headerLogo {
+    height: 100px;
+    width: auto;
+}
 /*------------------Navigation------------------*/
 nav {
     display: flex;
@@ -82,8 +86,10 @@ nav a:hover {
 }
 .infoCard {
     height: 500px;
+    margin: 10px;
     flex: 1 0 300px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    text-align: center;
 }
 .infoCard img {
     width: 100%;
